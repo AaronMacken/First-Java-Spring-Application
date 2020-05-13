@@ -22,4 +22,15 @@ public class BoxingCoach implements Coach {
 	public String getDailyFortune() {
 		return "Boxing coach says: " + fortuneService.getFortune();
 	}
+	
+//	add init method
+	public void doMyStartupStuff() {
+		System.out.println("Boxing Coach: Doing start up stuff");
+	}
+	
+//	add destroy method
+	public void doMyDestroyStuff() {
+		System.out.println("Boxing Coach: Doing clean up stuff");
+	}
+
 }
